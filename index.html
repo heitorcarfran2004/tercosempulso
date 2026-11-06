@@ -496,7 +496,7 @@ footer{color:var(--l-ink-soft);font-size:12.5px}
 (function(){
  /* ---- Preco e checkout: tudo aqui ---- */
  var CHECKOUT = 'https://pay.wiapy.com/PlrKEzykqK1t';  /* checkout da Wiapy (06/11/2026). E o unico lugar do link; as UTMs da URL vao junto. */
- var BACK = '';               /* checkout da oferta de saida (promo.html ainda nao existe): vazio = back redirect desligado */
+ var BACK = 'https://pay.wiapy.com/HipeRwfesjK';  /* checkout da oferta de saida (R$ 9,90): usado no botao da promo.html; aqui so liga o back redirect para /promo */
  var T = {p:17.90, peca:50, b:[27,19,19,19,17,19,19,17,27,17]};  /* reais: preco do guia, preco da peca pronta citado nos anuncios e valor de cada bonus */
  function f(n){return 'R$ '+n.toLocaleString('pt-BR',{minimumFractionDigits:n%1?2:0,maximumFractionDigits:2})}
  function f2(n){return 'R$ '+n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})}
