@@ -1,0 +1,4 @@
+node_modules/
+servidor.log
+# rascunhos e versoes antigas comecam com _ e nunca vao para o repo
+_*
