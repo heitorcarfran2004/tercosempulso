@@ -310,6 +310,29 @@ footer{color:var(--l-ink-soft);font-size:12.5px}
 .totbon b{margin:2px 0}
 .total b{color:var(--l-ink)}
 .heroimg{border-radius:0;box-shadow:none}
+/* ===== 2 planos (16/11/2026): Basico discreto em cima/esquerda, Completo em destaque ===== */
+.planos{display:grid;gap:18px;align-items:start}
+@media(min-width:900px){#oferta .wrap{max-width:980px}.planos{grid-template-columns:1fr 1.35fr}#oferta h2,#oferta .lead{max-width:660px;margin-left:auto;margin-right:auto}}
+.basico{background:#fff;border:1.5px solid var(--l-borda);border-radius:22px;padding:18px 18px 20px;box-shadow:0 8px 20px rgba(46,32,36,.06);text-align:center}
+.plano-tag{display:inline-block;font-size:11px;letter-spacing:.16em;font-weight:800;color:var(--l-ink-soft);background:#F4EDE6;border-radius:999px;padding:4px 12px}
+.basico h3{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:21px;line-height:1.15;color:var(--l-ink);margin:10px 0 2px}
+.basico .ptit{font-size:14px;color:var(--l-ink-soft);margin-bottom:12px}
+.basico .bcapa{width:150px;margin:0 auto 12px;border-radius:8px;box-shadow:0 10px 22px rgba(46,32,36,.22)}
+.basico ul{list-style:none;text-align:left;display:grid;gap:6px;margin:0 0 14px}
+.basico li{display:flex;gap:9px;align-items:flex-start;font-size:14.5px;line-height:1.35}
+.basico li:before{content:"✓";flex:none;width:20px;height:20px;border-radius:50%;background:#E5F4EA;color:var(--verde2);font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.basico li.nao{color:#A79AA2;text-decoration:line-through}
+.basico li.nao:before{content:"✕";background:#F1EBEE;color:#B7A9B1}
+.basico .bpreco{font-weight:800;font-size:36px;color:var(--l-ink);line-height:1;letter-spacing:-.02em;margin:4px 0 2px}
+.basico .unico{margin-bottom:12px}
+.btn2{display:block;max-width:440px;margin:0 auto;text-align:center;background:#fff;color:var(--l-ink);border:2px solid #CDBFC6;font-weight:800;font-size:16px;padding:13px 16px;border-radius:999px;text-decoration:none}
+.completo{position:relative;padding-top:14px}
+.completo .ribbon{padding-top:20px}
+.selo-plano{position:absolute;top:0;left:50%;transform:translateX(-50%);z-index:3;background:#C8102E;color:#fff;font-weight:800;font-size:12px;letter-spacing:.12em;padding:6px 14px;border-radius:999px;white-space:nowrap;box-shadow:0 6px 14px rgba(200,16,46,.3)}
+.completo .oferta{padding-top:0}
+.ctit{text-align:center;font-family:"DM Serif Display",Georgia,serif;font-size:24px;line-height:1.1;margin:2px 0 4px;color:var(--l-ink)}
+.nota-bonus{text-align:center;font-size:14.5px;color:var(--l-ink-soft);margin:-4px auto 14px;max-width:30em}
+.nota-bonus b{color:var(--l-wine)}
 </style>
 </head>
 <body>
@@ -375,7 +398,7 @@ footer{color:var(--l-ink-soft);font-size:12.5px}
 <section class="pegada-abajo">
  <div class="wrap">
   <h2>Tudo o que <em>você vai receber</em></h2>
-  <p class="lead">O guia <b>50 Projetos de Terços de Pulso</b>, todo colorido, em PDF, e mais 10 bônus.</p>
+  <p class="lead">O guia <b>50 Projetos de Terços de Pulso</b>, todo colorido, em PDF. No <b>Plano Completo</b>, ainda vêm 10 bônus.</p>
   <ul class="recebe">
    <li class="rev"><i>📿</i><span><b>50 modelos em 9 estilos:</b> clássicos, no elástico, macramê e cordão, com fecho, corrente no pino, pedras naturais, masculinos, infantis e lembrancinhas, e pra presentear</span></li>
    <li class="rev"><i>✨</i><span><b>9 técnicas de montagem</b> e medalhas de <b>25 santos e devoções</b></span></li>
@@ -384,7 +407,7 @@ footer{color:var(--l-ink-soft);font-size:12.5px}
    <li class="rev"><i>🛒</i><span><b>Lista de material</b> com a quantidade de cada conta</span></li>
    <li class="rev"><i>⏱️</i><span><b>Nível, tempo e tamanho</b> de cada peça, do iniciante ao avançado</span></li>
    <li class="rev"><i>🙏</i><span><b>Como rezar a dezena</b> e quem é o santo de cada medalha</span></li>
-   <li class="rev"><i>🎁</i><span><b>10 bônus</b> pra vender: preços, datas, mensagens e embalagens</span></li>
+   <li class="rev"><i>🎁</i><span><b>10 bônus</b> pra vender: preços, datas, mensagens e embalagens <b>(no Plano Completo)</b></span></li>
   </ul>
  </div>
 </section>
@@ -394,7 +417,7 @@ footer{color:var(--l-ink-soft);font-size:12.5px}
  <div class="wrap">
   <div class="puente"><span>+</span></div>
   <h2>E mais: <em>10 bônus de presente</em></h2>
-  <p class="lead">O guia ensina a fazer. Os bônus ajudam com o resto: <b>quanto cobrar, quando, pra quem e como apresentar</b>. Só pra quem comprar hoje:</p>
+  <p class="lead">O guia ensina a fazer. Os bônus ajudam com o resto: <b>quanto cobrar, quando, pra quem e como apresentar</b>. Vêm no <b>Plano Completo</b>:</p>
   <div class="bonus rev"><img width="240" height="320" loading="lazy" decoding="async" src="img/bonus01.webp" alt="Bônus 1: Guia pra vender + mensagens prontas"><div><h3>1 · Guia pra vender + mensagens prontas</h3><p>Onde vender (paróquia, catequese, grupo de oração, feira de artesanato, loja de artigos religiosos, WhatsApp, Instagram, Shopee e Elo7) e 8 mensagens prontas pra copiar.</p><div class="val">Valor <s data-v="b1"></s><span class="gratis">GRÁTIS</span></div></div></div>
   <div class="bonus rev"><img width="240" height="320" loading="lazy" decoding="async" src="img/bonus02.webp" alt="Bônus 2: Preços + Calculadora"><div><h3>2 · Preços + Calculadora</h3><p>Quanto custa cada peça e quanto cobrar. A calculadora em reais faz a conta sozinha.</p><div class="val">Valor <s data-v="b2"></s><span class="gratis">GRÁTIS</span></div></div></div>
   <div class="bonus rev"><img width="240" height="320" loading="lazy" decoding="async" src="img/bonus03.webp" alt="Bônus 3: Calendário religioso"><div><h3>3 · Calendário religioso</h3><p>As datas católicas do ano no Brasil, da Semana Santa ao Natal, passando por Dia das Mães, Santo Antônio, São Jorge, Aparecida e Cosme e Damião, com o dia de começar a preparar.</p><div class="val">Valor <s data-v="b3"></s><span class="gratis">GRÁTIS</span></div></div></div>
@@ -405,7 +428,7 @@ footer{color:var(--l-ink-soft);font-size:12.5px}
   <div class="bonus rev"><img width="240" height="320" loading="lazy" decoding="async" src="img/bonus08.webp" alt="Bônus 8: Embalagens e etiquetas"><div><h3>8 · Embalagens e etiquetas</h3><p>Ideias pra entregar como presente, etiquetas pra imprimir e cartõezinhos com a oração da dezena.</p><div class="val">Valor <s data-v="b8"></s><span class="gratis">GRÁTIS</span></div></div></div>
   <div class="bonus rev"><img width="240" height="320" loading="lazy" decoding="async" src="img/bonus09.webp" alt="Bônus 9: Onde comprar os materiais"><div><h3>9 · Onde comprar os materiais</h3><p>Armarinho, 25 de Março, Shopee e AliExpress: o que pedir na loja e como economizar comprando em quantidade.</p><div class="val">Valor <s data-v="b9"></s><span class="gratis">GRÁTIS</span></div></div></div>
   <div class="bonus rev"><img width="240" height="320" loading="lazy" decoding="async" src="img/bonus10.webp" alt="Bônus 10: Fotos que vendem"><div><h3>10 · Fotos que vendem</h3><p>Como fotografar seus terços de pulso com o celular, sem equipamento, pra parecer foto profissional.</p><div class="val">Valor <s data-v="b10"></s><span class="gratis">GRÁTIS</span></div></div></div>
-  <div class="totbon">Valor de todos os bônus: <s data-v="bonus"></s><b>HOJE: GRÁTIS</b></div>
+  <div class="totbon">Valor de todos os bônus: <s data-v="bonus"></s><b>GRÁTIS NO PLANO COMPLETO</b></div>
   <div class="cta"><a class="btn" href="#oferta">Quero meus bônus! →</a></div>
  </div>
 </section>
@@ -426,31 +449,55 @@ footer{color:var(--l-ink-soft);font-size:12.5px}
  </div>
 </section>
 
-<!-- 8. OFERTA -->
+<!-- 8. OFERTA: 2 planos (16/11/2026). Basico R$ 17,90 = CHECKOUT; Completo R$ 27,90 = CHECKOUT_COMPLETO (card da italiana, em destaque) -->
 <section class="alt" id="oferta">
  <div class="wrap">
-  <h2>Tudo isso é seu <em>hoje</em></h2>
-  <p class="lead">O guia completo e os 10 bônus, num pagamento só.</p>
-  <div class="oferta">
-   <div class="ribbon">⭐ ACESSO COMPLETO · TUDO INCLUÍDO</div>
-   <img width="1180" height="1100" loading="lazy" decoding="async" class="ofimg" src="img/oferta-v2.webp" srcset="img/oferta-v2-640.webp 640w, img/oferta-v2.webp 1180w" sizes="(max-width:660px) calc(100vw - 78px), 584px" alt="O guia 50 Projetos de Terços de Pulso e as capas dos 10 bônus">
+  <h2>Escolha o seu <em>plano</em></h2>
+  <p class="lead">Pagamento único, acesso imediato e garantia de 7 dias nos dois.</p>
+  <div class="planos">
+  <div class="basico">
+   <span class="plano-tag">PLANO BÁSICO</span>
+   <h3>50 Projetos de Terços de Pulso</h3>
+   <p class="ptit">passo a passo ilustrado</p>
+   <img width="600" height="848" loading="lazy" decoding="async" class="bcapa" src="img/capa.webp" alt="Capa do guia 50 Projetos de Terços de Pulso">
    <ul>
-    <li><span><b>50 modelos</b> de terço de pulso, passo a passo</span></li>
-    <li><span><b>Montagem em 6 fotos</b> em cada modelo</span></li>
-    <li><span><b>Material</b> e quantidade de cada conta</span></li>
-    <li><span><b>Do iniciante ao avançado</b>, com tempo e tamanho</span></li>
-    <li><span><b>Masculino, infantil</b>, lembrancinha e presente</span></li>
-    <li><span><b>Como vender:</b> preços, datas e o que escrever</span></li>
-    <li><span><b>10 bônus</b> de presente</span></li>
-    <li><span><b>Acesso imediato</b> e pra sempre</span></li>
-    <li><span><b>Garantia</b> de 7 dias</span></li>
+    <li>50 modelos de terço de pulso</li>
+    <li>Ficha + passo a passo ilustrado de cada modelo</li>
+    <li>PDF de 101 páginas</li>
+    <li>Acesso imediato</li>
+    <li class="nao">Guia pra vender + mensagens prontas</li>
+    <li class="nao">Preços + Calculadora</li>
+    <li class="nao">Calendário religioso</li>
+    <li class="nao">+ 7 bônus (não incluso)</li>
    </ul>
-   <p class="total">Um terço de pulso pronto sai por uns <b data-v="peca"></b> na loja.</p><p class="total" style="margin-top:2px">Os 10 bônus: <s data-v="bonus"></s> <b style="color:var(--verde2)">GRÁTIS</b></p><p class="total" style="margin-top:2px">Hoje, o guia com os 50 modelos e os bônus por só:</p>
-   <div class="precio" data-v="preco"></div>
-   <p class="unico">pagamento único · sem mensalidade</p>
-   <div class="ahorro">Sai a <span data-v="pormodelo"></span> por modelo</div>
-   <a class="btn checkout" href="#checkout">Sim, quero o meu guia →<small>Acesso imediato por e-mail</small></a>
-   <div class="sellos"><div><i>🔒</i>Compra segura</div><div><i>✅</i>Garantia de 7 dias</div><div><i>🛡️</i>Dados protegidos</div></div>
+   <div class="bpreco" data-v="precoB"></div>
+   <p class="unico">pagamento único</p>
+   <a class="btn2 checkout basico-btn" href="#checkout">Quero só o Básico</a>
+  </div>
+  <div class="completo">
+   <div class="selo-plano">⭐ MAIS ESCOLHIDO</div>
+   <div class="oferta">
+    <div class="ribbon">⭐ ACESSO COMPLETO · TUDO INCLUÍDO</div>
+    <p class="ctit">Plano Completo</p>
+    <img width="1180" height="1100" loading="lazy" decoding="async" class="ofimg" src="img/oferta-v2.webp" srcset="img/oferta-v2-640.webp 640w, img/oferta-v2.webp 1180w" sizes="(max-width:660px) calc(100vw - 78px), 584px" alt="O guia 50 Projetos de Terços de Pulso e as capas dos 10 bônus">
+    <ul>
+     <li><span><b>50 modelos</b> de terço de pulso, passo a passo</span></li>
+     <li><span><b>Montagem em 6 fotos</b> em cada modelo</span></li>
+     <li><span><b>Material</b> e quantidade de cada conta</span></li>
+     <li><span><b>Do iniciante ao avançado</b>, com tempo e tamanho</span></li>
+     <li><span><b>Masculino, infantil</b>, lembrancinha e presente</span></li>
+     <li><span><b>Como vender:</b> preços, datas e o que escrever</span></li>
+     <li><span><b>10 bônus</b> de presente</span></li>
+     <li><span><b>Acesso imediato</b> e pra sempre</span></li>
+     <li><span><b>Garantia</b> de 7 dias</span></li>
+    </ul>
+    <p class="total">Um terço de pulso pronto sai por uns <b data-v="peca"></b> na loja.</p><p class="total" style="margin-top:2px">Os 10 bônus: <s data-v="bonus"></s> <b style="color:var(--verde2)">GRÁTIS</b></p><p class="total" style="margin-top:2px">Hoje, o guia com os 50 modelos e os 10 bônus por só:</p>
+    <div class="precio" data-v="precoC"></div>
+    <p class="unico">pagamento único · sem mensalidade</p>
+    <div class="ahorro">Sai a <span data-v="pormodeloC"></span> por modelo, com os bônus</div>
+    <a class="btn checkout completo-btn" href="#checkout-completo">Sim, quero o Completo →<small>Acesso imediato por e-mail</small></a>
+    <div class="sellos"><div><i>🔒</i>Compra segura</div><div><i>✅</i>Garantia de 7 dias</div><div><i>🛡️</i>Dados protegidos</div></div>
+  </div>
   </div>
  </div>
 </section>
@@ -470,10 +517,11 @@ footer{color:var(--l-ink-soft);font-size:12.5px}
   <details><summary>Preciso ter experiência com artesanato?</summary><div class="in">Não. Tem modelo que fica pronto em 20 minutos, mesmo pra quem nunca fez nada. Cada modelo mostra o material, a ferramenta e cada passo em foto. Comece pelos de nível Iniciante: são 24 dos 50.</div></details>
   <details><summary>É só pra vender ou dá pra fazer pra mim?</summary><div class="in">Os dois. Você pode fazer o seu, presentear a família, preparar a lembrancinha do batizado ou da primeira comunhão, ou vender. Vender é uma opção, não uma obrigação.</div></details>
   <details><summary>É pagamento único ou mensalidade?</summary><div class="in">Pagamento único. Sem mensalidade e sem taxa escondida.</div></details>
-  <details><summary>Que material eu preciso? É caro?</summary><div class="in">Contas, elástico de silicone ou cordão, uma medalha, um crucifixo e argolinhas, que você acha em loja de bijuteria, de aviamento ou na internet. A ferramenta básica é um alicate de bico chato e uma tesoura. Cada modelo traz a lista com a quantidade certinha de cada conta. Um modelo simples sai por uns R$ 6 de material. No bônus 9 você vê onde comprar tudo.</div></details>
+  <details><summary>Qual a diferença entre o Básico e o Completo?</summary><div class="in">Os dois têm o guia inteiro, com os 50 modelos. O Completo vem também com os 10 bônus pra vender: preços e calculadora, calendário religioso, mensagens prontas, catálogo, embalagens e o resto.</div></details>
+  <details><summary>Que material eu preciso? É caro?</summary><div class="in">Contas, elástico de silicone ou cordão, uma medalha, um crucifixo e argolinhas, que você acha em loja de bijuteria, de aviamento ou na internet. A ferramenta básica é um alicate de bico chato e uma tesoura. Cada modelo traz a lista com a quantidade certinha de cada conta. Um modelo simples sai por uns R$ 6 de material. No bônus 9 (Plano Completo) você vê onde comprar tudo.</div></details>
   <details><summary>O guia é só de terço de pulso?</summary><div class="in">É. Os 50 modelos são de terço de pulso: a dezena (10 contas, o Pai-Nosso e o crucifixo ou a medalha) que fica no braço. É rápido de fazer e vai com você pra todo lado.</div></details>
   <details><summary>Tem modelo masculino e infantil?</summary><div class="in">Tem. São 5 masculinos, no tamanho de 19 a 20 cm, e 5 infantis, de 13 a 15 cm, além das lembrancinhas de batizado, primeira eucaristia e crisma.</div></details>
-  <details><summary>Como eu recebo?</summary><div class="in">Assim que o pagamento é aprovado, você recebe o acesso no seu e-mail e baixa o guia em PDF e os bônus. Abre no celular ou no computador, sem instalar nada.</div></details>
+  <details><summary>Como eu recebo?</summary><div class="in">Assim que o pagamento é aprovado, você recebe o acesso no seu e-mail e baixa o guia em PDF (e os bônus, no Plano Completo). Abre no celular ou no computador, sem instalar nada.</div></details>
   <details><summary>É livro físico?</summary><div class="in">Não. É um guia digital em PDF, todo colorido. Você pode ler no celular ou imprimir.</div></details>
   <details><summary>Tem vídeo-aula?</summary><div class="in">Não precisa. Cada modelo tem a montagem em 6 fotos e o caminho da dezena desenhado conta por conta, pra você seguir com calma.</div></details>
   <details><summary>Vou conseguir vender?</summary><div class="in">O guia te dá o passo a passo e modelos pra todo tipo de cliente: mulher, homem, criança, noiva, madrinha, avó. Vender depende de você, de quanto você faz e mostra. Muita gente começa pela família, pela igreja e pelo WhatsApp, e os bônus mostram como: preços, datas e mensagens prontas.</div></details>
@@ -486,7 +534,7 @@ footer{color:var(--l-ink-soft);font-size:12.5px}
  <div class="wrap">
   <h2>A hora de começar <em>é agora</em></h2>
   <p style="margin-bottom:22px">Faça o seu primeiro terço de pulso numa tarde, com os 50 modelos passo a passo e os 10 bônus, e leve a dezena no braço pro trabalho, pro ônibus, pra missa.</p>
-  <a class="btn checkout" href="#checkout">Quero o guia completo agora →<small><span data-v="preco"></span> · pagamento único</small></a>
+  <a class="btn checkout completo-btn" href="#checkout-completo">Quero o Plano Completo agora →<small><span data-v="precoC"></span> · pagamento único</small></a>
  </div>
 </section>
 
@@ -495,20 +543,21 @@ footer{color:var(--l-ink-soft);font-size:12.5px}
 <script>
 (function(){
  /* ---- Preco e checkout: tudo aqui ---- */
- var CHECKOUT = 'https://pay.wiapy.com/PlrKEzykqK1t';  /* checkout da Wiapy (06/11/2026). E o unico lugar do link; as UTMs da URL vao junto. */
+ var CHECKOUT = 'https://pay.wiapy.com/PlrKEzykqK1t';  /* Plano Basico R$ 17,90 (Wiapy). Unico lugar do link; as UTMs da URL vao junto. */
+ var CHECKOUT_COMPLETO = 'https://pay.wiapy.com/HjYbn2fCxwC';  /* Plano Completo R$ 27,90 (Wiapy, 16/11/2026) */
  var BACK = 'https://pay.wiapy.com/HipeRwfesjK';  /* checkout da oferta de saida (R$ 9,90): usado no botao da promo.html; aqui so liga o back redirect para /promo */
- var T = {p:17.90, peca:50, b:[27,19,19,19,17,19,19,17,27,17]};  /* reais: preco do guia, preco da peca pronta citado nos anuncios e valor de cada bonus */
+ var T = {pB:17.90, pC:27.90, peca:50, b:[27,19,19,19,17,19,19,17,27,17]};  /* reais: Basico, Completo, preco da peca pronta citado nos anuncios e valor de cada bonus */
  function f(n){return 'R$ '+n.toLocaleString('pt-BR',{minimumFractionDigits:n%1?2:0,maximumFractionDigits:2})}
  function f2(n){return 'R$ '+n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})}
  var bon=T.b.reduce(function(a,c){return a+c},0);
- var v={preco:f2(T.p),peca:f(T.peca),pormodelo:f2(Math.round(T.p/50*100)/100),bonus:f(bon)};
+ var v={precoB:f2(T.pB),precoC:f2(T.pC),peca:f(T.peca),pormodeloC:f2(Math.round(T.pC/50*100)/100),bonus:f(bon)};
  T.b.forEach(function(x,i){v['b'+(i+1)]=f(x)});
  document.querySelectorAll('[data-v]').forEach(function(el){var k=el.getAttribute('data-v');if(v[k])el.textContent=v[k]});
  /* leva as UTMs da campanha ate o checkout (so quando o link for de verdade) */
  var q=location.search.replace(/^\?/,'');
  function comQ(u){return q&&/^https?:/.test(u)?u+(u.indexOf('?')>=0?'&':'?')+q:u}
  var indoParaCheckout=false;
- document.querySelectorAll('a.checkout').forEach(function(a){a.href=comQ(CHECKOUT);a.addEventListener('click',function(){indoParaCheckout=true})});
+ document.querySelectorAll('a.checkout').forEach(function(a){a.href=comQ(a.classList.contains('completo-btn')?CHECKOUT_COMPLETO:CHECKOUT);a.addEventListener('click',function(){indoParaCheckout=true})});
 
  /* ---- Botoes ancora: rolam ate a secao sem colocar # na URL ---- */
  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){
